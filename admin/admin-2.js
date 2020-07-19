@@ -7,7 +7,7 @@ document.querySelector("#c2 #complete-btn").addEventListener('click', () => {
 });
 
 function check() {
-    let items = document.querySelectorAll('.items');
+    let items = document.querySelectorAll('.item');
     if (items.length != 7) {
         return false;
     }
