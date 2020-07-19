@@ -1,0 +1,25 @@
+#backpack {
+    height: 300px;
+}
+
+#c2 main {
+    display: flex;
+    justify-content: center;
+}
+
+#c2 .controls {
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+#c2 .controls button {
+    background-color: lightgreen;
+    color: black;
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    padding: 5px;
+}

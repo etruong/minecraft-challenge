@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minecraft Coding Adventures</title>
+        <meta name="description" content="STEM League program friday coding adventures" />
+        <meta name="author" content="Elisa Truong" />
+
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <link href="../style.css" rel="stylesheet" />
+        <link href="./style-3.css" rel="stylesheet" />
+    </head>
+    <body id="c3">
+        <button class="tl-btn"><a href="../index.html">Menu</a></button>
+        <h1>Minecraft Coding Adventures</h1>
+        <div class="func-controls">
+            <button id="show-instruct">Show Instructions</button>
+            <button id="complete-btn">Completed Tasks</button>
+        </div>
+        <div class="flex">
+            <div id="instructions" class="hidden">
+                <h2>Instructions:</h2>
+                <p>Altering only the challenge-3.js file (DO NOT ALTER the HTML OR CSS) do the following</p>
+                <ol>
+                    <li>
+                        Make it so when you double tap on the tree, it creates 4 wood (wood.png) 
+                        img DOM elements to #inventory with the following traits:
+                        <ul>
+                            <li>an alt attribute with the words "wood"</li>
+                            <li>classes: wood and resource</li>
+                            <li>on click event where it toggles the class selected (Try: node.classList.toggle('class'))</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Create an on click event for the #convert-btn that does the following:
+                        <ol>
+                            <li>Removes one wood piece (hint: use query selector)</li>
+                            <li>Increase the convertedWood variable by 1</li>
+                            <li>
+                                Check if the convertedWood variable is equal to 4, if it is, then
+                                creates and append a sword div DOM element to #inventory
+                            </li>
+                            <li>
+                                Note the sword should have the following traits:
+                                <ul>
+                                    <li>backgroundImage should be wooden-sword.png</li>
+                                    <li>innerHTML should equal '<code>&nbsp</code>' with a semicolon (;) at the end</li>
+                                    <li>id should be 'sword'</li>
+                                    <li>should contain class 'resource' and 'background-styling'</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>Once you've completed your sword, and it is shown in your inventory. Click the completed task button</li>
+                    <li>
+                        Challenge!
+                        <ol>
+                            <li>Uncomment the select tag and option tag below</li>
+                            <li>
+                                Change where you set the backgroundImage of the sword div to be
+                                dependent on the value of the dropdown #sword-type (using if/else)
+                            </li>
+                            <li>
+                                Create an on change event listener for the #sword-type to change
+                                the sword type in inventory to the sword-type user chosen value 
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+            <main>
+                <h2>Inventory</h2>
+                <div id="inventory">
+                    <img class="tree resource" src="./img/tree.png" alt="mystery">
+                </div>
+                <button id="convert-btn">Convert</button>
+                <!-- <select id="sword-type">
+                    <option value="wood">Wooden</option>
+                    <option value="stone">Stone</option>
+                    <option value="gold">Gold</option>
+                </select> -->
+            </main>
+        </div>
+
+        <!-- JavaScript files: -->
+        <script src="../index.js"></script>
+        <script src="../admin/admin-3.js"></script>
+        <script src="challenge-3.js"></script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minecraft Coding Adventures</title>
+        <meta name="description" content="STEM League program friday coding adventures" />
+        <meta name="author" content="Elisa Truong" />
+
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <link href="../style.css" rel="stylesheet" />
+        <link href="./style-2.css" rel="stylesheet" />
+    </head>
+    <body id="c2">
+        <button class="tl-btn"><a href="../index.html">Menu</a></button>
+        <h1>Minecraft Coding Adventures</h1>
+        <div class="func-controls">
+            <button id="show-instruct">Show Instructions</button>
+            <button id="complete-btn">Completed Tasks</button>
+        </div>
+        <div class="flex">
+            <div id="instructions" class="hidden">
+                <h2>Instructions:</h2>
+                <p>Altering only the challenge-2.js file (DO NOT ALTER the HTML OR CSS) do the following:</p>
+                <ol>
+                    <li>
+                        Using only JavaScript, create the following img DOM elements adding the class .item
+                        and attach it to the #backpack:
+                        <ul>
+                            <li>1 Meat (using steak.png and add the class food)</li>
+                            <li>1 Corn (using corn.jpg and add the class food)</li>
+                            <li>3 Waterbuckets (using water.png and add the class water)</li>
+                            <li>1 Axe (using axe.png and setting the id to axe)</li>
+                            <li>1 pickaxe (using pick.png and setting the id to pick)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        In the JS, create an on click event listener for the #eat-btn that grabs and 
+                        removes one of the elements in the #backpack with the class .food 
+                    </li>
+                    <li>
+                        In the JS, create an on click event listener for the #drink-btn that grabs and 
+                        removes one of the elements in the #backpack with the class .water 
+                    </li>
+                    <li>
+                        <span class="bold">Challenge:</span> 
+                        Create an on click event listener for the use item button that takes the value in the input and 
+                        does the following depending on what is used:
+                        <ul>
+                            <li>If it's the pickaxe it adds a stone (stone.jpeg) into the #backpack with the class .stone</li>
+                            <li>If it's the axe it adds wood (wood.gif) into the #backpack with the class .wood</li>
+                        </ul>
+                    </li>
+                    <li>Click the Completed Task button to find your answer</li>
+                </ol>
+            </div>
+            <main>
+                <div id="backpack"></div>
+                <div class="controls">
+                    <button id="eat-btn">Eat Food</button>
+                    <button id="drink-btn">Drink Water</button>
+                    <input type="text" placeholder="Type item to use here" />
+                    <button class="submit-btn">Use Item</button>
+                </div>
+            </main>
+        </div>
+
+        <!-- JavaScript files: -->
+        <script src="../index.js"></script>
+        <script src="../admin/admin-2.js"></script>
+        <script src="challenge-2.js"></script>
+    </body>
+</html>

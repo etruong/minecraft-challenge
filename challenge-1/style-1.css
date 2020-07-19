@@ -1,0 +1,36 @@
+#c1 main img:nth-child(1) {
+    border: red 5px solid;
+    padding: 10px;
+    border-radius: 100px;
+    display: none;
+}
+
+#c1 .object  {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+
+#c1 .mystery-3 {
+    background-image: url('./img/mystery-3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#c1 .mystery-4 {
+    background-image: url('./img/mystery-4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#c1 .mystery-5 {
+    background-image: url('./img/mystery-5.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#c1 .rock {
+    background-image: url('./img/rock.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,10 @@
+.resource {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    padding: 5px;
+}
+
+.selected {
+    border: red 1px solid;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minecraft Coding Adventures</title>
+        <meta name="description" content="STEM League program friday coding adventures" />
+        <meta name="author" content="Elisa Truong" />
+
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <link href="../style.css" rel="stylesheet" />
+        <link href="./style-4.css" rel="stylesheet" />
+    </head>
+    <body id="c4">
+        <button class="tl-btn"><a href="../index.html">Menu</a></button>
+        <h1>Minecraft Coding Adventures</h1>
+        <div class="func-controls">
+            <button id="show-instruct">Show Instructions</button>
+        </div>
+        <div class="flex">
+            <div id="instructions" class="hidden">
+                <h2>Instructions:</h2>
+                <p>Altering only the challenge-3.js file (DO NOT ALTER the HTML OR CSS) do the following</p>
+                <ol>
+                    <li>Add a on click event that when the #attack-btn is click on it calls the attack function above</li>
+                    <li>Create a function that changes the currentWeapon variable to the value of the dropdown menu (hint: use querySelector)</li>
+                    <li>Add a on change event listener to the dropdown menu that calls the function you created in step 2</li>
+                    <li>Defeat the Creeper king! Click on the attack button until he is defeated. He should give you the password to continue your adventure!</li>
+                </ol>
+            </div>
+            <main>
+                <div>
+                    <img src="https://gamepedia.cursecdn.com/adventofascension_gamepedia/3/35/King_Creeper.png" alt="creeper king" />
+                    <div id="progress"><div>&nbsp;</div></div>
+                </div>
+                <div>
+                    <select>
+                        <option value="crossbow">Crossbow</option>
+                        <option value="wooden">Wooden Sword</option>
+                        <option value="stone">Stone Sword</option>
+                        <option value="gold">Golden Sword</option>
+                    </select>
+                    <button id="attack-btn">Attack</button>
+                </div>
+            </main>
+        </div>
+
+        <!-- JavaScript files: -->
+        <script src="../index.js"></script>
+        <script src="challenge-4.js"></script>
+        <script src="../admin/admin-4.js"></script>
+    </body>
+</html>
