@@ -28,3 +28,11 @@ let currentWeapon;
 // 3. Add a on change event listener to the dropdown menu that calls the function you created in step 2
 // 4. Defeat the Creeper king! Click on the attack button until he is defeated. He should give you the
 //      password to continue your adventure!
+
+document.querySelector("#attack-btn").addEventListener("click", attack);
+
+function changeCurrentWeapon() {
+    currentWeapon = document.querySelector("select").value;
+}
+
+document.querySelector("select").addEventListener("change", changeCurrentWeapon);

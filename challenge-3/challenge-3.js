@@ -25,3 +25,49 @@
  */
 
 let convertedWood = 0;
+
+let inventory = document.getElementById("inventory");
+
+let tree = document.querySelector(".tree");
+tree.addEventListener("dblclick", function () {
+    let wood1 = createWood();
+    let wood2 = createWood();
+    let wood3 = createWood();
+    let wood4 = createWood();
+
+    inventory.appendChild(wood1);
+    inventory.appendChild(wood2);
+    inventory.appendChild(wood3);
+    inventory.appendChild(wood4);
+
+    tree.remove();
+});
+
+document.getElementById("convert-btn").addEventListener("click", function () {
+    document.querySelector(".wood").remove();
+    convertedWood++;
+    if (convertedWood == 4) {
+        let sword = createSword();
+        inventory.appendChild(sword);
+    }
+});
+
+function createSword() {
+    let sword = document.createElement("div");
+    sword.id = "sword";
+    sword.innerHTML = "&nbsp;";
+    sword.classList.add("resource", "background-styling");
+    sword.style.backgroundImage = "url(\"./img/wood-sword.png\")";
+    return sword;
+}
+
+function createWood() {
+    let wood = document.createElement("img");
+    wood.alt = "wood";
+    wood.src = "./img/wood.gif";
+    wood.classList.add("wood", "resource");
+    wood.addEventListener("click", function () {
+        wood.classList.toggle("selected");
+    });
+    return wood;
+}
